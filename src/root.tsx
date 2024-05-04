@@ -20,7 +20,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets}>
         <WalletModalProvider>
-          <main className="w-full h-screen overflow-hidden flex-1">
+          <main className="w-full h-screen flex-1">
             <Header />
             {children}
           </main>
