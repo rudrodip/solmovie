@@ -18,8 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-
-const MOVIE_REVIEW_PROGRAM_ID = "CenYq6bDRB7p73EjsPEpiYN7uveyPUTdXkDkgUduboaN";
+import { MOVIE_REVIEW_PROGRAM_ID } from "@/lib/constants";
 
 const formSchema = z.object({
   title: z.string().min(2, {
