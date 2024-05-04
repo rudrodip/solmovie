@@ -110,6 +110,6 @@ function MovieCard({ movie }: { movie: Movie }) {
 
 function MovieSkeleton() {
   return (
-    <div className="w-full max-w-lg h-20 rounded border p-3 bg-accent break-all animate-pulse"></div>
+    <div className="w-full h-20 rounded border p-3 bg-accent break-all animate-pulse"></div>
   );
 }
