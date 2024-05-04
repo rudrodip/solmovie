@@ -1,13 +1,17 @@
-import { Button } from "@/components/ui/button"
-import { ThemeToggler } from "@/components/theme/theme-toggler"
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui"
+import MovieForm from "@/components/form";
+import MovieList from "@/components/movie/movie-list";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
-    <div>
-      <WalletMultiButton />
-      <Button>Click me</Button>
-      <ThemeToggler />
-    </div>
+    <section className="w-full h-full flex justify-between items-center flex-wrap md:flex-nowrap">
+      <div className="w-full h-full p-5 flex flex-col justify-center items-center">
+        <MovieForm />
+      </div>
+      <Separator orientation="vertical"/>
+      <div className="w-full h-full p-5 flex flex-col items-center">
+        <MovieList />
+      </div>
+    </section>
   )
 }
