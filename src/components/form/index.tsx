@@ -54,7 +54,7 @@ export default function MovieForm() {
     const buffer = movie.serialize();
     const transaction = new web3.Transaction();
 
-    const [pda] = await web3.PublicKey.findProgramAddressSync(
+    const [pda] = web3.PublicKey.findProgramAddressSync(
       [publicKey.toBuffer(), new TextEncoder().encode(movie.title)],
       new web3.PublicKey(MOVIE_REVIEW_PROGRAM_ID)
     );
